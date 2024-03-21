@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myloan|apply</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav>
+            <div class="header">
+                <div class="header__left">
+                    
+                    <img src="images/logo.png" width="200"/>
+                </div>
+                <div class="header__account">
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Deposit</a></li>
+        
+                </div>
+                <!-- <div class="header__center">
+                    <div class="select">
+                    <i class="fa-solid fa-globe fa-2x"></i>
+                    <h3>Global</h3>
+                </div>
+                    <select class="worldwide">
+        <option class="global">Kenya</option>
+        <option class="global">Uganda</option>
+        <option class="global">South Korea</option>
+        <option class="global">Germany</option>
+        <option class="global">Tanzania</option>
+        <option class="global">France</option>
+                    </select>
+                </div> -->
+                <div class="header__right">
+                    <i class="fa-solid fa-comment fa-3x"></i>
+                    <i class="fa-solid fa-bell fa-3x"></i>
+                    <div class="notifications">15+</div>
+                </div>
+            </div>
+        </nav>
+        
+            </div>
+
+
+    <div class="container">
+      <div class="apply">
+        <h1>Apply here</h1>
+        <p id="paragraph"></p>
+        <div class="form">
+        <div class="application__form">
+          <form class="loanform">
+            <label for="name">Full Name:</label><br />
+            <input type="text" id="name" name="name" required /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required /><br />
+            <label for="phone">Phone Number:</label><br />
+            <input type="tel" id="phone" name="phone" minlength="10" required /><br />
+            <label for="dob">Date Of Birth:</label><br />
+            <input type="date" id="dob" name="dob" required /><br />
+            <label for="adress">Address:</label><br />
+            <textarea name="adress" id="adress" rows="4" required></textarea
+            ><br />
+            <!--employment information-->
+            <label for="employer">Company Name:</label><br />
+            <input type="text" id="employer" name="employer" required /><br />
+            <label for="income">Monthly Income (Ksh):</label><br />
+            <input type="number" id="income" name="income" required /><br />
+
+            <label for="loanAmount">Loan Amount (Ksh):</label><br />
+            <select id="loanAmount" name="loanAmount" required>
+              <option value="5000">Ksh5000</option>
+              <option value="6000">Ksh6000</option>
+              <option value="7000">Ksh7000</option>
+              <option value="8000">Ksh8000</option>
+              <option value="9000">Ksh9000</option>
+              <option value="10000">Ksh10000</option>
+              <option value="11000">Ksh11000</option>
+              <option value="12000">Ksh12000</option>
+              <option value="13000">Ksh13000</option>
+              <option value="14000">Ksh14000</option>
+              <option value="15000">Ksh15000</option>
+              <option value="16000">Ksh16000</option>
+              <option value="17000">Ksh17000</option>
+              <option value="18000">Ksh18000</option>
+              <option value="19000">Ksh19000</option>
+              <option value="20000">Ksh20000</option>
+              <option value="21000">Ksh21000</option>
+              <option value="22000">Ksh22000</option>
+              <option value="23000">Ksh23000</option>
+              <option value="24000">Ksh24000</option>
+              <option value="25000">Ksh25000</option>
+              <option value="26000">Ksh26000</option>
+              <option value="27000">Ksh27000</option>
+              <option value="28000">Ksh28000</option>
+              <option value="29000">Ksh29000</option>
+              <option value="30000">Ksh30000</option>
+              <option value="31000">Ksh31000</option>
+              <option value="32000">Ksh32000</option>
+              <option value="33000">Ksh33000</option>
+              <option value="34000">Ksh34000</option>
+              <option value="35000">Ksh35000</option>
+              <option value="36000">Ksh36000</option>
+              <option value="37000">Ksh38000</option>
+              <option value="39000">Ksh39000</option>
+              <option value="40000">Ksh40000</option>
+              <option value="41000">Ksh41000</option>
+              <option value="42000">Ksh42000</option>
+              <option value="43000">Ksh43000</option>
+              <option value="44000">Ksh44000</option>
+              <option value="45000">Ksh45000</option>
+              <option value="46000">Ksh46000</option>
+              <option value="47000">Ksh47000</option>
+              <option value="50000">Ksh50000</option>
+              <option value="55000">Ksh55000</option>
+              <option value="60000">Ksh60000</option>
+              <option value="70000">Ksh70000</option>
+              <option value="75000">Ksh75000</option>
+              <option value="80000">Ksh80000</option>
+              <option value="85000">Ksh85000</option>
+              <option value="90000">Ksh90000</option>
+              <option value="100000">Ksh100000</option></select
+            ><br />
+            <label for="loanDuration">Loan Duration:</label><br />
+            <select id="loanDuration" name="loanDuration" required>
+              <option value="6">6 months</option>
+              <option value="12">12 months</option>
+              <option value="24">24 months</option>
+              <option value="36">36 months</option></select
+            ><br />
+            <label for="loanPurpose">Loan Purpose:</label> <br />
+            <select id="loanPurpose" name="loanPurpose" required>
+              <option value="education">Education</option>
+              <option value="home">Home Purchase</option>
+              <option value="car">Car Purchase</option>
+              <option value="Debtconsolidation">Debt consolidation</option>
+              <option value="Homeimprovements">Home improvements</option>
+              <option value="Movingcosts">Moving costs</option>
+              <option value="investing">Investing</option>
+              <option value="majorpurchases">Major purchases</option>
+              <option value="renovations">Renovations</option>
+              <option value="businessventures">
+                business ventures
+              </option></select
+            ><br />
+
+            
+            <label for="calculatedRate"
+              >Calculated Loan Interest Rate (%):</label
+            >
+            <span id="calculatedRateValue">--</span>
+            <p>
+              Interest rates may vary based on the loan amount and other
+              factors. The calculated rate represents an estimate based on your
+              inputs.
+            </p>
+            
+            <label for="totalAmount">Total Amount:</label>
+            <span id="totalAmount">--</span><br />
+            <br />
+            <!-- Input field for ID photograph upload -->
+            <label for="idPhoto">Upload ID Photograph:</label><br />
+            <input
+              type="file"
+              id="idPhoto"
+              name="idPhoto"
+              accept="image/*"
+              required
+            /><br />
+           
+           
+          </form>
+        </div>
+        <div class="application__form">
+            
+            <form class="loanform">
+                <h2>Are you currently working?</h2>
+                <label>Yes</label>
+                <input type="radio" name="yes"><br>
+
+                <label>No</label>
+                <input type="radio" name="yes"><br>
+
+                <label>Maybe</label>
+                <input type="radio" name="yes">
+
+
+                <h2>Guarantor</h2>
+                <label for="name">Full Name:</label><br />
+                <input type="text" id="name" name="name" /><br />
+    
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" required /><br />
+                <label for="phone">Phone Number:</label><br />
+                <input type="tel" id="phone" name="phone" required minlength="10"/><br />
+                <label for="relationship">Relationship with applicant:</label><br />
+
+                <select id="relationship" name="relationship" required>
+                    <option value="friend">Friend</option>
+                    <option value="workmate">Workmate</option>
+                    <option value="brother/sister">Brother/Sister</option>
+                    <option value="parent">Parent</option>
+                    <option value="schoolmate">Schoolmate</option>
+                    </select><br>
+                    
+                    <label for="placeofwork">Place of Work:</label><br />
+                    <input type="text" id="placeofwork" name="placeofwork" required /><br />
+                    <label for="idPhoto">Upload ID Photograph:</label><br />
+                    <input
+                      type="file"
+                      id="idPhoto"
+                      name="idPhoto"
+                      accept="image/*"
+                      required
+                    /><br />
+                    <h2>Terms of services</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio alias facere minus doloremque mollitia obcaecati unde! Adipisci quasi vero, voluptatum repudiandae animi perspiciatis magnam esse aliquam illum! Dignissimos, alias porro!</p>
+        
+                    <input type="checkbox" name="checkbox" required>
+                    <label>I accept to the terms and conditions of services</label>
+    
+                </div>
+
+      </div>
+      
+      <!-- Submit button -->
+      <div class="submit">
+      <button id="btn" type="submit">Submit Application</button>
+    </div>
+</div>
+    </div>
+
+     <!--footer-->
+     <footer>
+        <div class="footerpart">
+<div class="footer">
+    <div class="footer__left">
+        <img src="images/logo.png" alt="logo image" width="300">
+        <h4>Be the first for our updates</h4>
+        <div class="left">
+        <input type="email" name="email" placeholder="Enter Your Email">
+        <button>Send</button>
+    </div>
+    </div>
+    <div class="footer__center">
+        <h2>Links</h2>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="login.html">Login</a></li>
+    </div>
+    <div class="footer__right">
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <i class="fa-solid fa-phone-volume fa-3x"></i>
+            <p>+254 705764291</p>
+        </div>
+        <div class="contact">
+            <i class="fa-solid fa-envelope fa-3x"></i>
+            <p>myloan332@gmail.com</p>
+        </div>
+        <div class="contact">
+            <i class="fa-solid fa-location-dot fa-3x"></i>
+            <p>Kibra Estate, 2nd floor</p>
+        </div>
+    </div>
+</div>
+<div class="footericons">
+    <div class="left__part"></div>
+    <div class="center__part">
+        <i class="fa-brands fa-facebook fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        <i class="fa-brands fa-twitter fa-2x"></i>
+        <i class="fa-brands fa-google fa-2x"></i>
+        <i class="fa-brands fa-telegram fa-2x"></i>
+    </div>
+    <div class="right__part"></div>
+</div>
+<p>&copy;MyLoan @2024. All rights reserved</p>
+</div> 
+    </footer>
+    <script src="js/application.js"></script>
+  </body>
+</html>

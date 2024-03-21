@@ -1,0 +1,121 @@
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variables" as *;
+
+
+.main{
+   padding-top: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    @include flex(center,center);
+        gap:6rem;
+    
+}
+
+.main__left{
+    width: 600px;
+    height: 600px;
+    // background-color: $cyan-blue;
+    border-radius: 50%;
+    text-align: center;
+}
+.main__left img{
+//    border-radius: 30%;
+    padding-top: 4rem;
+}
+.main h1{
+    font-size: 3rem;
+}
+.main p{
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+.testimonials{
+    background-color: lightgrey;
+    height: 130vh;
+    margin-top: 4rem;
+}
+.testimonials h1{
+    font-size: 3rem;
+    text-align: center;
+    color: $cyan-blue;
+    padding: 4rem 0;
+}
+.cards{
+    @include flex(space-around,center);
+}
+.testimonials__card{
+    width: 30%;
+    @include flex(center,center,column);
+    position: relative;
+  
+}
+.cardimage i{
+    position: absolute;
+    top: 60%;
+    right: 18%;
+    color: red;
+}
+.cardcontent{
+    background-color: #fff;
+   width: 80%;
+   height: 30vh;
+   margin-top: -3%;
+}
+.cardcontent p{
+    font-size: 1.4rem;
+    word-spacing: 3px;
+    color: grey;
+}
+.cardcontent h5{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.testimonials button{
+    background-color: $orange;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    margin-right:4rem ;
+    border: none;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:415px){
+    .main img{
+        width: 250px;
+    }
+    .main{
+       
+        width: 100%;
+    }
+    .cardcontent{
+        width: 100%;
+    }
+
+    .testimonials{
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+    .testimonials h1{
+        font-size: 2rem;
+    }
+    .cards{
+        @include flex(center,center,column);
+        text-align: center;
+        width: 90%;
+    }
+    .cards p{
+        width: 100%;
+        font-size: .8rem;
+    }
+    .cards img{
+        width: 300px;;
+    }
+   .testimonials__card{
+    width: 100%;
+   }
+}

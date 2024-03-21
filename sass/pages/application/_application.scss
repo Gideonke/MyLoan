@@ -1,0 +1,170 @@
+
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variables" as *;
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header{
+    @include flex(space-between, center);
+    background-color: $cyan-blue;
+  
+}
+.header__left{
+    display: flex;
+    align-items: center;
+}
+.header__left i{
+    color: #fff;
+}
+.select{
+    @include flex(center,center);
+}
+.header__center:hover{
+    background-color: $cyan-blue;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+// .worldwide{
+//     display: none;
+// }
+select.active{
+    display: block;
+}
+.header__account{
+    @include flex(center,center);
+    gap: 4rem;
+}
+.header__center h3{
+    font-size: 1.2rem;
+}
+
+
+.header li a{
+    color: black;
+    font-size: 1.4rem;
+    
+    text-decoration: none;
+}
+.header li{
+    list-style-type: none;
+}
+
+.header li a:hover{
+   
+    border: 1px solid black;
+    padding: .2rem 2rem;
+    color: white;
+    border-radius: 30px;
+    transition: all 3s ease;
+}
+.notifications{
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 97%;
+    top: 10%;
+    right: 0;
+    border: #fff;
+
+}
+.header__right i{
+color: #fff;
+margin-right:3rem ;
+}
+
+
+
+
+.apply{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../../images/pexels-vinicius-wiesehofer-1130624.jpg)no-repeat center center/cover;
+
+    height: 140vh;
+    width: 100%;
+    margin-top: -5rem;
+   
+  
+}
+.form{
+    @include flex(space-between,center);
+}
+.form p{
+    font-size: 1rem;
+    word-spacing: 4px;
+    line-height: 2rem;
+    padding-left: 3rem;
+}
+.apply h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+ 
+}
+.application__form{
+    height: 120vh;
+    width: 600px;
+    background-color: white;
+    border-radius: 18px;
+    @include flex(center,center,column);
+    gap: 1rem;
+    margin: 0 6rem;
+
+    
+    
+   
+}
+.application__form label{
+    font-size: 1.5rem;
+    padding-left: 3rem;
+}
+.application__form input{
+    padding: 1rem 8rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-radius: none;
+    margin-left: 3rem;
+}
+.application__form textarea{
+    padding: 2rem 8rem;
+    border-radius: 10px;
+    margin-left: 3rem;
+    
+}
+.application__form select{
+    padding: 1rem 8rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    margin-left: 3rem;
+}
+.apply button{
+    padding: 1rem 4rem;
+    background: $orange;
+    font-size: 1.8rem;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.application__form h2{
+    margin:1rem 0;
+    padding-left: 3rem;
+}
+.submit{
+    @include flex(center,center,column);
+
+}

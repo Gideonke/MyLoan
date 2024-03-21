@@ -1,0 +1,162 @@
+
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variables" as *;
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.headernav{
+    @include flex(space-between,center);
+    background-color: $cyan-blue;
+}
+.nav__left{
+    @include flex(space-between,center);
+padding-left: 2rem; 
+}
+
+.nav__left i{
+    color: #fff;
+}
+
+.nav__center ul{
+    @include flex(space-between,center);
+    gap: 4rem;
+    font-size: 2rem;
+    list-style-type: none;
+}
+.nav__center ul a{
+    color: #000;
+    text-decoration: none;
+}
+.nav__center ul a:hover{
+    border: 1px solid black;
+    padding: .2rem 2rem;
+    color: white;
+    border-radius: 30px;
+    transition: all 3s ease;
+}
+
+
+.nav__right button a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav__right{
+    display: flex;
+    gap: 2rem;
+    margin-right: 3rem;
+    position: relative;
+}
+.nav__right i{
+    color: #fff;
+}
+.about{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../../images/pexels-elevate-1269029.jpg)no-repeat center center/cover;
+margin-top: -2rem;
+    height: 60vh;
+    margin-top: -5rem
+}
+.aboutcontent {
+    @include flex(center,center,column);
+    gap: 2rem;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.aboutcontent h1{
+    font-size: 5rem;
+    color: $cyan-blue;
+}
+.aboutcontent p{
+    font-size: 2rem;
+    color: #fff;
+    word-spacing: 3px;
+}
+
+.about__card{
+    @include flex(center,center);
+    gap: 3rem;
+}
+.card{
+    width: 30%;
+}
+.aboutsection{
+    margin-top: 4rem;
+}
+
+.about__card img{
+    border-radius: 50%;
+}
+
+.aboutsection h2{
+    font-size: 3rem;
+    color: $orange;
+}
+.aboutsection p{
+    font-size: 1rem;
+    word-spacing: 3px;
+    line-height: 2rem;
+}
+
+.aboutleader{
+    margin-top: 3rem;
+    background-color: whitesmoke;
+}
+.aboutleader h1{
+    font-size: 4rem;
+    text-align: center;
+    color: $cyan-blue;
+}
+.aboutleader__ceo{
+    @include flex(center,center,column);
+
+}
+.about-image{
+    width: 400px;
+    height: 400px;
+    background-color: lightgray;
+    text-align: center;
+    @include flex(center,center,column);
+    border-radius: 50%;
+    
+}
+
+.aboutleader__ceo h3{
+    font-size: 2rem;
+    color: $orange;
+}
+.aboutleader__ceo h4{
+    font-size: 2rem;
+}
+.leaders{
+    @include flex(center,center);
+gap: 3rem;
+margin-top: 2rem;
+}
+
+.leader-img{
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    text-align: center;
+    @include flex(center,center);
+    border-radius: 50%;
+     
+}
+.our__leaders{
+    @include flex(center,center,row);
+  gap: 2rem;
+}
+.leaders h4{
+    font-size: 1.4rem;
+    color: $cyan-blue;
+
+}
+.leaders h5{
+    font-size: 1.2rem;
+}

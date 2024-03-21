@@ -1,0 +1,155 @@
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variables" as *;
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.headernav{
+    @include flex(space-between,center);
+    background-color: $cyan-blue;
+}
+.nav__left{
+    @include flex(space-between,center);
+padding-left: 2rem; 
+}
+
+.nav__left i{
+    color: #fff;
+}
+
+.nav__center ul{
+    @include flex(space-between,center);
+    gap: 4rem;
+    // font-size: 1.2rem;
+    list-style-type: none;
+    margin-right: 3rem;
+}
+.nav__center ul a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.nav__center ul a:hover{
+    border: 1px solid black;
+    padding: .2rem 2rem;
+    color: white;
+    border-radius: 30px;
+    transition: all 3s ease;
+}
+.nav__right button{
+    background-color: $orange;
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    border-radius: 30px;
+    margin-right:4rem ;
+    border: none;
+
+}
+
+.nav__right button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+span{
+    color: $orange;
+}
+
+.herocontainer{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../../images/pexels-andrea-piacquadio-3775553.jpg)no-repeat center center/cover;
+    height: 80vh;
+    width: 100%;
+    @include flex(space-around,center);
+ margin-top: -5rem;
+
+}
+.hero__left{
+    width: 45%;
+    @include flex(center,center,column);
+    gap: 4rem;
+
+}
+.hero__left h1{
+    color: #fff;
+    font-size: 3rem;
+}
+.hero__left h2{
+    color: #fff;
+    font-size: 2.6rem;
+    word-spacing: 2px;
+}
+.hero__left p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+    word-spacing: 4px;
+    line-height: 4rem;
+}
+.hero__right{
+    background-color: $cyan-blue;
+    height: 70vh;
+    width: 500px;
+    border-radius: 20px;
+    @include flex(center,center,column);
+gap: 1rem;
+margin-left: 6rem;
+width: 30%;
+}
+
+.hero__right h2{
+    color: $orange;
+    background-color: #fff;
+    font-size: 2.5rem;
+    margin: 1em 0;
+    width: 15rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.hero__right input{
+   
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    border-bottom: 2px solid $orange;
+    margin-bottom: 2rem;
+    @include flex(center,center,column)
+}
+.hero__right button{
+    background-color: $orange;
+    font-size: 2rem;
+   padding: 0 4rem;
+    border-radius: 30px;
+    margin-right:4rem ;
+    border: none;
+
+}
+.errorText{
+    color: red;
+    text-align: center;
+    padding: .5em 0;
+}
+.hero__right button a{
+    color: #fff;
+}
+.hero__right p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.hero__right a{
+    color: $orange;
+    text-decoration: none;
+}
+.hero__right-icons i{
+    color: #fff;
+    padding: 1rem;
+}
+.hero__right-icons i:hover{
+    color: $orange;
+   
+
+}

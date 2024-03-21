@@ -1,0 +1,123 @@
+@use "../../utilities/mixin" as *;
+@use "../../utilities/variables" as *;
+
+.footerpart{
+    background-color: $cyan-blue;
+    height: 55vh;
+    margin:3rem 0 ;
+}
+
+
+.footer{
+   
+   
+    @include flex(space-around, center);
+   
+}
+.footer i{
+    color: #fff;
+}
+
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.footer h2{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+footer li{
+    list-style-type: none;
+    font-size: 1.6rem;
+    padding: .4rem 0;
+
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    border: 1px solid black;
+    padding: .2rem .3rem;
+    color: white;
+    border-radius: 30px;
+    transition: all 3s ease;
+
+}
+.footer h4{
+    font-size: 2rem;
+}
+.footer p{
+    font-size: 1.5rem;
+}
+.footer input{
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border: none;
+    border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+}
+.footer button{
+    background-color: $orange;
+    padding: 1.1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.left{
+    @include flex(center,center);
+
+}
+.footericons{
+    @include flex(space-around,center);
+    margin: 4rem 0;
+
+}
+.left__part{
+    border: 3px solid #000;
+    width:35%
+    
+}
+.right__part{
+   
+        border: 3px solid #000;
+        width:35%
+}
+.center__part i{
+    color: #fff;
+  
+}
+.center__part i:hover{
+    color: $orange;
+
+}
+.center__part{
+    @include flex(center,center);
+gap: 2rem; 
+}
+.footerpart p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width:415px) {
+    .footer{
+        @include flex(space-between,center,column);
+        width:100%;
+       margin-top: 90rem;
+    }
+    .footerpart{
+        height: 130vh;
+    }
+    .right__part{
+        width: 90%;
+    }
+    .left__part{
+        width: 90%;
+    }
+}

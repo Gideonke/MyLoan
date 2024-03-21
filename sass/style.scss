@@ -1,0 +1,18 @@
+@use "./utilities/base";
+@use "./pages/homepage/header";
+@use "./pages/homepage/main";
+@use "./pages/homepage/footer";
+@use "./pages/about/about";
+
+@use "./pages/login/login";
+@use "./pages/register/register";
+@use "./pages/dashboard/dashboard";
+@use "./pages/application/application";
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+body {
+  padding-top: 243px;
+}
