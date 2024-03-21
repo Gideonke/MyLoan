@@ -88,13 +88,13 @@ const validateInputs = () => {
       label.style.color = "black";
      
       // pop.style.display='block'
-
+      pop.style.display='block'
     }
     
     // if (input.style.border = "2px solid red") {
     //   pop.style.display='none'
     // }else{
-    //   pop.style.display='block'
+   
 
     // }
   });
