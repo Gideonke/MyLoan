@@ -9,6 +9,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" type="image/png" href="/images/aspen-removebg-preview.png" width="400"/>
+
     <script
     type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -72,16 +74,15 @@
             <label for="dob">Date Of Birth:</label><br />
             <input type="date" id="dob" name="dob" required /><br />
             <label for="adress">Address:</label><br />
-            <textarea name="adress" id="adress" rows="4" required></textarea
+            <textarea name="address" id="address" rows="4" required></textarea
             ><br />
-            <!--employment information-->
             <label for="employer">Company Name:</label><br />
             <input type="text" id="employer" name="employer" required /><br />
             <label for="income">Monthly Income (Ksh):</label><br />
             <input type="number" id="income" name="income" required /><br />
 
             <label for="loanAmount">Loan Amount (Ksh):</label><br />
-            <select id="loanAmount" name="loanAmount" required>
+            <select id="loanAmount" name="loanAmount">
               <option value="5000">Ksh5000</option>
               <option value="6000">Ksh6000</option>
               <option value="7000">Ksh7000</option>
@@ -132,8 +133,8 @@
               <option value="80000">Ksh80000</option>
               <option value="85000">Ksh85000</option>
               <option value="90000">Ksh90000</option>
-              <option value="100000">Ksh100000</option></select
-            ><br />
+              <option value="100000">Ksh100000</option>
+              </select><br />
             <label for="loanDuration">Loan Duration:</label><br />
             <select id="loanDuration" name="loanDuration" required>
               <option value="6">6 months</option>
@@ -172,14 +173,14 @@
             <span id="totalAmount">--</span><br />
             <br />
             <!-- Input field for ID photograph upload -->
-            <label for="idPhoto">Upload ID Photograph:</label><br />
+            <!-- <label for="idPhoto">Upload ID Photograph:</label><br />
             <input
               type="file"
               id="idPhoto"
               name="idPhoto"
               accept="image/*"
               required
-            /><br />
+            /><br /> -->
            
            
           </form>
@@ -189,13 +190,13 @@
             <form class="loanform">
                 <h2>Are you currently working?</h2>
                 <label>Yes</label>
-                <input type="radio" name="yes"><br>
+                <input type="radio" name="yes" id="yes"><br>
 
                 <label>No</label>
-                <input type="radio" name="yes"><br>
+                <input type="radio" name="yes" id="yes"><br>
 
                 <label>Maybe</label>
-                <input type="radio" name="yes">
+                <input type="radio" name="yes" id="yes">
 
 
                 <h2>Guarantor</h2>
@@ -218,14 +219,14 @@
                     
                     <label for="placeofwork">Place of Work:</label><br />
                     <input type="text" id="placeofwork" name="placeofwork" required /><br />
-                    <label for="idPhoto">Upload ID Photograph:</label><br />
+                    <!-- <label for="idPhoto">Upload ID Photograph:</label><br />
                     <input
                       type="file"
                       id="idPhoto"
                       name="idPhoto"
                       accept="image/*"
                       required
-                    /><br />
+                    /><br /> -->
                     <h2>Terms of services</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio alias facere minus doloremque mollitia obcaecati unde! Adipisci quasi vero, voluptatum repudiandae animi perspiciatis magnam esse aliquam illum! Dignissimos, alias porro!</p>
         
@@ -237,6 +238,14 @@
       </div>
       
       <!-- Submit button -->
+      <div class="pop">
+        <h1>Application completed</h1>
+        <img src="images/icon-check.svg" width="30"/>
+        <p>wait for verification within 24hrs</p>
+        <p>Thank you</p>
+        <button><a href="dashboard.html">Back</a></button>
+
+      </div>
       <div class="submit">
       <button id="btn" type="submit">Submit Application</button>
     </div>

@@ -1,30 +1,28 @@
 // JavaScript code for the loan application form (client-side)
+
+// const name=document.getElementById("name").value
+// const phoneNumber=document.getElementById("phone").value
+//   const email=document.getElementById("email").value
+
+
 function updateLoanAmountDisplay() {
-  console.log("Function called");
   const loanAmountSelect = document.getElementById("loanAmount");
   const calculatedRate = document.getElementById("calculatedRateValue");
   const loanDuration = parseInt(document.getElementById("loanDuration").value);
-  console.log("loanAmountSelect:", loanAmountSelect);
-  console.log("calculatedRate:", calculatedRate);
-  console.log("loanDuration:", loanDuration);
-  // Get the selected loan amount option value
   const selectedLoanAmountOption = loanAmountSelect.value;
   const loanAmount = Number(selectedLoanAmountOption);
-  console.log("selectedLoanAmountOption:", selectedLoanAmountOption);
-  console.log("loanAmount:", loanAmount);
   // Calculate the interest rate based on the loan amount and duration (you can customize this logic)
   let interestRate = 15;
   // Default 15% interest rate // Calculate the total amount to be paid back
   const totalAmount = loanAmount * (1 + interestRate / 100);
   // Update displayed loan amount and calculated rate
-  loanAmountSelect.value = loanAmount.toFixed(2);
   // Display two decimal places
   calculatedRate.textContent = interestRate.toFixed(2) + "%";
   // Display the total amount
   const totalAmountElement = document.getElementById("totalAmount");
-  if (totalAmountElement) {
+
     totalAmountElement.textContent = totalAmount.toFixed(2);
-  }
+  
 }
 // Add event listeners to the loan amount and loan duration dropdowns
 document
@@ -40,6 +38,12 @@ let button = document.querySelector("#btn");
 let inputs = document.querySelectorAll(".loanform input");
 let message = document.querySelector("#paragraph");
 let form=document.querySelector('.loanform')
+let pop=document.querySelector('.pop')
+// let params={
+//   name:document.getElementById("name").value,
+//   phoneNumber:document.getElementById("phone").value,
+//   email:document.getElementById("email").value,
+// }
 
 const sendEmail=()=>{
    emailjs.init({
@@ -82,8 +86,17 @@ const validateInputs = () => {
       input.style.border = "2px solid black";
       // massage.style.color='red'
       label.style.color = "black";
-    }
-  });
+      // alert("fchvjh")
+      // pop.style.display='block'
 
+    }
+    
+    // if (input.style.border = "2px solid red") {
+    //   pop.style.display='none'
+    // }else{
+    //   pop.style.display='block'
+
+    // }
+  });
   sendEmail()
 };

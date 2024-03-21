@@ -1306,6 +1306,35 @@ select.active {
   flex-wrap: wrap;
 }
 
+.pop {
+  width: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border-radius: 20px;
+  background-color: #0693e3;
+  position: absolute;
+  top: 130%;
+  left: 40%;
+  display: none;
+}
+
+.pop h1 {
+  font-size: 1.5rem;
+}
+
+.pop p {
+  font-size: 1rem;
+}
+
+.pop button {
+  padding: 1rem 1.4rem;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;

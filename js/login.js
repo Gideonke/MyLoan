@@ -47,9 +47,12 @@ const handleLogin = () => {
     if (
       detail.username === username.value &&
       detail.password === password.value
+    
     ) {
+     
       window.location.replace('http://127.0.0.1:5500/dashboard.html')
       return;
+      
     } else {
       errorMessage.textContent="Invalid Credentials"
       errorMessage.style.color = "red";
