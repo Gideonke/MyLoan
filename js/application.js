@@ -86,7 +86,7 @@ const validateInputs = () => {
       input.style.border = "2px solid black";
       // massage.style.color='red'
       label.style.color = "black";
-      // alert("fchvjh")
+     
       // pop.style.display='block'
 
     }

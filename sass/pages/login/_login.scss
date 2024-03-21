@@ -60,7 +60,7 @@ span{
 }
 
 .herocontainer{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../../images/pexels-andrea-piacquadio-3775553.jpg)no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/pexels-andrea-piacquadio-3775553.jpg)no-repeat center center/cover;
     height: 80vh;
     width: 100%;
     @include flex(space-around,center);
